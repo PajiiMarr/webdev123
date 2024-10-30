@@ -5,7 +5,7 @@
     <ul class="nav nav-pills flex-column mb-auto">
         <li class="side-nav-title">Home</li>
         <li class="nav-item">
-            <a href="dashboard" id="dashboard-link" class="nav-link">
+            <a href="dashboard.php" id="dashboard-link" class="nav-link">
                 <i class="bi bi-speedometer2"></i>
                 <span class="fs-6 ms-2">Dashboard</span>
             </a>

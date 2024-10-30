@@ -9,6 +9,8 @@ $username = $password = '';
 $accountObj = new Account();
 $loginErr = '';
 
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = clean_input(($_POST['username']));
     $password = clean_input($_POST['password']);
@@ -27,6 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+
+
+
+
 ?>
 <style>
     .bd-placeholder-img {
@@ -137,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
     <main class="form-signin w-100 m-auto">
-        <form action="loginwcss.php" method="post">
+        <form method="post">
             <img class="mb-4" src="../img/box.png" alt="" width="72" height="57">
 
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
@@ -158,8 +164,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </label>
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+            <a href="signup.php" class="w-100 btn btn-primary mt-2 mb-2">
+                Signup
+            </a>
             <p class="mt-5 mb-3 text-body-secondary">&copy; 20242025</p>
         </form>
+
     </main>
     <?php
     require_once '../includes/_footer.php';
