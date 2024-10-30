@@ -158,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </label>
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-body-secondary">&copy; 20242025</p>
+            <p class="mt-5 mb-3 text-body-secondary">&copy; 2024-2025</p>
         </form>
     </main>
     <?php
